@@ -6,14 +6,36 @@
     box-sizing: border-box;
 }
 
+*{
+  padding: 0;
+  margin: 0;
+}
+
+html, body{
+  padding: 0;
+  margin: 0 auto;
+}
 
 main{
   width: 100%;
   height: auto;
   margin: 0 auto;
   background-color: var(--background-darker);
+  padding: 0;
 }
 
+#myVideo{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  min-height: 720px;
+  object-fit: cover;
+  top: 0;
+  position: absolute;
+  z-index: -1;
+  opacity: 1;
+}
 
 
 
@@ -147,21 +169,20 @@ main{
     margin: 0 auto;
     background-color: var(--four-color);
     color: var(--background-lightest);
-  align-items: center;
- justify-content: center;
+    align-items: center;
+    justify-content: center;
     z-index: 1;
 }
 
 .venta-grid-4{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 2fr));
     width: 100%;
     height: auto;
     margin: 0 auto;
-    color: var(--background-lightest);
-    place-content: center;
-    justify-items: center;
+    place-content:center;
     z-index: 1;
+    padding: 1.6rem;
 }
 
 .section--title{
@@ -309,6 +330,7 @@ flex-direction: column;
 margin: 0 auto;
 align-items: center;
 justify-content: center;
+padding: ;
 }
   
 
@@ -376,7 +398,6 @@ width: 24%;
 max-width: 555px;
 height: auto;
 border-radius: 50%;
-margin-bottom: .1rem;
 aspect-ratio: 1 / 1;
 object-fit: cover;
 z-index: 100;
@@ -390,7 +411,6 @@ color: var(--four-color);
   
 cite {
 display: block;
-margin-top: 0.5rem;
 font-style: normal;
 font-weight: bold;
 color: var(--four-color);

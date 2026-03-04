@@ -38,7 +38,6 @@ body {
     font-family: "Montserrat", sans-serif;
     z-index: 1000;
     position: relative;
-
   }
 
 
@@ -48,6 +47,8 @@ img{
 
 
 #myVideo{
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: auto;
   min-height: 720px;
@@ -893,6 +894,7 @@ align-items: center;
 justify-content: center;
 color: var(--background-light);
 text-align: center;
+padding: 0;
 }
 
 .testimonial-slider p{
@@ -901,7 +903,7 @@ font-size: var(--p);
 display: flex;
 flex-direction: column;
 margin: 0 auto;
-padding: .111rem;
+padding: .1rem;
 align-items: center;
 justify-content: center;
 color: var(--background-light);
@@ -946,7 +948,7 @@ text-align: center;
   width: 80%;
   max-width: 320px;
   height: auto;
-  padding: 1.6rem;
+  padding: .8rem;
 }
   
 blockquote {
@@ -957,7 +959,7 @@ color: var(--four-color);
   
 cite {
 display: block;
-margin-top: 0.222rem;
+margin-top: 0.16rem;
 font-style: normal;
 font-weight: bold;
 color: var(--four-color);
@@ -966,7 +968,6 @@ color: var(--four-color);
 .next, .prev {
 top: 100%;
 cursor: pointer;
-padding: .1rem;
 }
 
 .next img{
@@ -981,13 +982,13 @@ padding: .1rem;
   
 
 .prev {
-    display: block;
-padding: .1rem;
+    display: none;
+padding: .16rem;
 }
   
 .next {
   display: block;
-  padding: .1rem;
+  padding: .16rem;
 }
 
 
